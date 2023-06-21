@@ -1,0 +1,56 @@
+.testimonials{
+   background-color: #f6f6f6;
+   padding: 110px 0;
+}
+.testimonials .main-title{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+}
+.testimonials .main-title h1{
+    font-weight: 700;
+    font-size: 37px;
+    position: relative;
+}
+.testimonials .main-title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    transform: translateX(-50%);
+}
+.testimonials .container{
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 20px;
+}
+.testimonials .container .box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 17px;
+}
+.testimonials .container .box .image {
+    width: 19%;
+}
+.testimonials .container .box .image img{
+    border-radius: 50%;
+}
+.testimonials .container .box .text{
+    width: 75%;
+}
+.testimonials .container .box .text p{
+    font-style: italic;
+    color: #777;
+    font-size: 15px;
+}
+.testimonials .container .box .text h4{
+    font-size: 16px;
+    color: #000000b0;
+}

@@ -1,0 +1,53 @@
+.team{
+  padding: 110px 0;
+}
+.team .main-title{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+}
+.team .main-title h1{
+    font-weight: 700;
+    font-size: 37px;
+    position: relative;
+}
+.team .main-title h1::before{
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    transform: translateX(-50%);
+}
+.team .main-title p{
+    font-size: 18px;
+    padding-top: 21px;
+    color: #777;
+}
+.team .container{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 40px;
+}
+.team .container .box{
+    text-align: center;
+}
+.team .container .box .image{
+    
+}
+.team .container .box .image img{
+    width: 100%;
+}
+.team .container .box h4{
+    font-size: 19px;
+    padding-top: 13px;
+}
+.team .container .box p{
+    color: #777;
+    font-size: 15.5px;
+}

@@ -1,0 +1,12 @@
+header .nav-item .nav-link{
+  font-size: 17px;
+  cursor: pointer;
+}
+header .navbar-brand{
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+.sticky-top{
+  background-color: #fff;
+}

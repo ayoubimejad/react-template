@@ -1,0 +1,60 @@
+.features{
+    background-color: #f6f6f6;
+}
+.features div.main-title {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    font-size: 41px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+}
+
+.features .main-title::before {
+    content: "";
+    position: absolute;
+    width: 34%;
+    height: 5px;
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .container {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    gap: 10px;
+}
+
+.features .container .box {
+    text-align: center;
+}
+.features .container .box div{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .container .box div svg {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+
+.features .container .box h3 {
+    font-size: 22px;
+    padding-top: 38px;
+}
+
+.features .container .box p {
+  color: #777;
+}

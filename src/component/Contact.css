@@ -1,0 +1,135 @@
+.contact {
+    background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+    padding: 120px 0;
+    color: #fff;
+}
+
+.contact .main-title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+}
+
+.contact .main-title h1 {
+    font-weight: 700;
+    font-size: 37px;
+    position: relative;
+}
+
+.contact .main-title h1::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    transform: translateX(-50%);
+}
+
+.contact .main-title p {
+    font-size: 18px;
+    padding-top: 21px;
+}
+
+.contact .container {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .container form {
+    width: 70%;
+}
+
+@media (max-width:767px) {
+    .contact .container form {
+        width: 100%;
+    }
+}
+
+.contact .container form input {
+    border: 1px solid #fff;
+}
+
+.contact .container form input:focus {
+    outline: none;
+}
+
+.contact .container form input:nth-child(1) {
+    width: 49%;
+    padding: 4px 10px;
+}
+
+@media (max-width:767px) {
+    .contact .container form input:nth-child(1) {
+        width: 100%;
+    }
+}
+
+.contact .container form input:nth-child(2) {
+    width: 49%;
+    margin-left: 2%;
+    padding: 4px 10px;
+}
+
+@media (max-width:767px) {
+    .contact .container form input:nth-child(2) {
+        width: 100%;
+        margin-top: 18px;
+        margin-left: 0;
+    }
+}
+
+.contact .container form textarea {
+    width: 100%;
+    margin-top: 18px;
+    padding: 4px 10px 85px 10px;
+    border: 1px solid #fff;
+}
+.contact .container form textarea:focus{
+    outline: none;
+}
+
+.contact .container form input.sub  {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 35px;
+    padding: 10px 37px;
+    border-radius: 39px;
+    border: #fefefe 2px solid;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.contact .container form input.sub:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.contact .container .info {
+    width: 25%;
+    font-weight: 300;
+}
+@media (max-width:767px){
+    .contact .container .info{
+        width: 100%;
+        margin-top: 70px;
+    } 
+}
+.contact .container .info span {
+    font-weight: 500;
+}
+
+.contact .container .info .address {}
+
+.contact .container .info .phone {
+    padding-top: 18px;
+}
+
+.contact .container .info .email {
+    padding-top: 18px;
+}
